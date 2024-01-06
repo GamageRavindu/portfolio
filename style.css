@@ -1,7 +1,7 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Inter:400|Poppins:500,400");
 * {
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   box-sizing: border-box;
 }
 html,
@@ -9,22 +9,21 @@ body {
   margin: 0px;
   height: 100%;
   width: auto;
+  /* height: auto; */
+  background-color: rgb(4.48, 17.61, 21.66);
 }
-/* a blue color as a generic focus style */
-button:focus-visible {
+
+/* button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
-}
+} */
+
 a {
   text-decoration: none;
 }
 
-.desktop {
+/* .desktop {
   background-color: rgb(0, 0, 0);
-  flex-direction: row;
-  justify-content: center;
-  font-family: "Poppins", Helvetica;
-
   background: linear-gradient(
     180deg,
     rgb(9, 1, 24) 0%,
@@ -33,23 +32,48 @@ a {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 365vh;
+} */
 
-}
-
-
-
-.desktop .blob1 {
-  position: absolute;
-  width: 20%;
-  height: auto;
+.header {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  
+  z-index: 100;
+  background-color: #3e0b589c;
 }
 
-.desktop .logo {
-  position: absolute;
-  top: 47px;
-  left: 160px;
+/* .header.sticky {
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+} */
+.logo {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Poppins", Helvetica;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .5s;
+  float:inline-end;
+
+}
+/* .logo {
+  position: fixed;
+  top: 2vh;
+  left: 3vW;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -58,17 +82,17 @@ a {
   line-height: normal;
 }
 
-.navbar-button {   
+.navbar {   
   position: fixed;
   display: inline-flex;
-  height: 79px;
+  top: 3.5vh;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 29px;
+  
   flex-shrink: 0;
-  z-index: 6;
-  top: 33px;
-  right: 161px;
+  z-index: 3;
+  gap: 29px;
+  right: 10vw;
 }
 
 
@@ -78,13 +102,14 @@ a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
-  transition: .8s;
+  /* margin-left: 35px; */
+  /* transition: .8s;
   border: none;
-}
+  
+} */ 
 
 .navbar a:hover {
-    color: #0a4186;
+    color: #0a5286;
     font-weight: 550;
     border: none;
 }
@@ -108,23 +133,37 @@ section {
 
 /* ----------------------- home-content ---------------------- */
 
-.desktop .home-content {
-  position: absolute;
-  width: 765px;
-  height: 535px;
-  top: 0vh;
-  left: 0;
+/* .home-content {
+  display: flex;
+} */
+
+.home-text {
+   margin-left: 10vh;
+   text-align: left;
 }
 
-.desktop .home-text {
-  width: 50vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
- 
+.home-text h2{
+  /* line-height: 1.5rem; */
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 40px;
+}
+
+.home-text h1{
+  /* line-height: 1.5rem; */
+  color: #1250b2;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+}
+
+.home-text p{
+  line-height: 1.5rem;
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
 
 }
-.desktop .hello_there-text {
+
+/* .desktop .hello_there-text {
   position: relative;
   top: 20vh;
   text-align: right;
@@ -134,10 +173,10 @@ section {
   font-size: 60px;
   letter-spacing: 0;
   line-height: normal;
-}
+} */
 
 
-.induwara_gamage-text {
+/* .induwara_gamage-text {
   position: relative;
   top: 22vh;
   text-align: right;
@@ -173,129 +212,83 @@ section {
   font-size: 25px;
   letter-spacing: 0;
   line-height: normal;
-}
-
+} */
+/* 
 .main-image {
-  position: relative;
+  position: flex;
   width:70vw;
   height: 100vh;
-}
-.desktop .profile-picture-blob {
-  position: relative;
+} */
+.profile-picture-blob {
+  position: flex;
   float: right;
   height: auto;
-  width: 45%;
-  top: 10vh;
-  align-items: center;
+  max-width: 30%;
+  min-width: 20%;
 }
 
 /*----------- about me --------------- */
-.profile-picture {
-  position: static;
+
+/* .profile-picture {
+  position: flex;
   height: 100vh;
   width: 70vw;
-}
-.desktop .profile-picture-circle {
-  position: relative;
-  top: 35vh;
-  width: 25%;
+} */
+.profile-picture-circle {
+  position: flex;
+  padding-top: 15vh;
+  width: 20%;
   height: auto;
-  float: left;
+
 }
 
-.desktop .horizontal-square {
-  position: absolute;
-  width: 9px;
-  height: 44px;
-  top: 12px;
-  left: 0;
-}
 
-.desktop .aboutme {
-  top: 20vh;
-  margin-left: 15px;
+.aboutme {
   color: #FFF;
   font-family: Poppins;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  padding-bottom: 10vh;
 }
 
 
-.desktop .aboutme-content {
-  position: relative;
-  width: 712px;
-  height: 707px;
-  left: 55%;
-}
-
-.desktop .aboutme-text {
-  position: relative;
-  width: 551px;
-  height: 461px;
-  top: 35vh;
-  left: 0;
-}
-
-.desktop .aboutme-title {
-  position: absolute;
-  width: 238px;
-  height: 68px;
-  top: 0;
-  left: 0;
-}
-
-.desktop .aboutme-discription {
-  position: absolute;
-  width: 549px;
-  top: 71px;
-  left: 0;
+.aboutme-discription {
+  position: flex;
+  width: 40vw;
+  padding-left: 5vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
-.desktop .blob4 {
-  position: absolute;
-  width: 323px;
-  height: 374px;
-  top: 1390px;
-  right:0;
-  scale: 150%;
-}
 
 /* -----------My services ----------*/
 
-.desktop .myservices-title {
+.myservices-title {
+  display: block;
   position: absolute;
-  display:block;
-  margin:auto;
   top: 210vh;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 45px;
-  letter-spacing: 0;
-  line-height: normal;
+  text-align: center;
+  border:#FFF 1px ;
+  /* padding-bottom: 10vh;; */
 }
 
-.desktop .service-container{
-  position: absolute;
-  top: 230vh; 
+.service-container{
+  display: flex;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 70px; 
   
 }
 
-.desktop .service-block {
-  position: relative;
-  width: 359px;
-  height: 361px;
+.service-block {
+  position: flex;
   background-image: url(./img/rectangle-9.svg);
   background-size: 100% 100%;
   width: 361px;
@@ -303,7 +296,7 @@ section {
   scale: 110%;
 }
 
-.desktop .img {
+.img {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -312,7 +305,7 @@ section {
   object-fit: cover;
 }
 
-.desktop .web-dev-img {
+.web-dev-img {
   position: absolute;
   width: 110px;
   height: 110px;
@@ -321,7 +314,7 @@ section {
   object-fit: cover;
 }
 
-.desktop .web-text {
+.web-text {
   position: absolute;
   top: 240px;
   left: 46px;
@@ -334,7 +327,7 @@ section {
   z-index: 1;
 }
 
-.desktop .animation-text {
+.animation-text {
   position: absolute;
   top: 240px;
   left: 25px;
@@ -348,7 +341,7 @@ section {
 
 
 
-.desktop .graphic-text {
+.graphic-text {
   position: absolute;
   top: 240px;
   left: 57px;
@@ -360,33 +353,9 @@ section {
   line-height: normal;
 }
 
-
-
-.desktop .blob5 {
-  position: relative;
-  width: 30%;
-  height: auto;
-  top: 20vh;;
-  float:left;
-}
-
-
-
-.desktop .services-hireme-button {
-  position: absolute;
-  display:block;
-  top: 280vh;
-  margin: auto;
-  align-items: center;
-  
-
-}
-
-
-
 /* ----------- contact me -------------- */
 
-.desktop .contactme-title {
+.contactme-title {
   position: absolute;
   top: 310vh;
   text-align: center;
@@ -398,9 +367,9 @@ section {
   line-height: normal;
 }
 
-.desktop .p {
+.p {
   position: absolute;
-  top: 335vh;
+  top: 325vh;
   left: 16vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
@@ -411,7 +380,7 @@ section {
 }
 
 
-.desktop .frame {
+.frame {
   display: flex;
   align-items: flex-start;
   gap: 33px;
@@ -451,7 +420,7 @@ section {
 }
 
 
-.desktop .facebook {
+.facebook {
   position: relative;
   width: 50px;
   height: 50px;
@@ -479,7 +448,7 @@ section {
   line-height: normal;
 }
 
-.desktop .twitter {
+.twitter {
   position: relative;
   width: 50px;
   height: 50px;
@@ -490,27 +459,24 @@ section {
 
 /* ------------ footer -------------------- */
 
-.desktop .footer {
+.footer {
   position: absolute;
   width: 100%;
   height: 100px;
-  top: 365vh;
-  left: 0;
   background-color: #08323F;
   /* background-size: 100% 100%; */
 }
 
-.desktop .footer-content {
+.footer-content {
   position: relative;
   width: 437px;
   height: 24px;
-  top: 30px;
-  left: 32vh;
+  top: 1vh;
+  left: 16vw;
 }
 
-.desktop .copyright {
+.copyright {
   position: absolute;
-  top: 0;
   left: 24px;
   font-family: "Inter", Helvetica;
   font-weight: 400;
@@ -521,11 +487,12 @@ section {
   white-space: nowrap;
 }
 
-.desktop .copyright-logo {
+.copyright-logo {
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 4px;
+  
+  top: 25px;
   left: 0;
   object-fit: cover;
 }
@@ -533,25 +500,73 @@ section {
 
 /* ------------  making responsive -------- */
 
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
 /* For mobile phones: */
-/* @media screen and (max-width: 768px) {
-  .desktop {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
+[class*="col-"] {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media(max-width:1200px){
+  html {
+      font-size: 55%;
+
   }
-} */
+}
+
+@media only screen and (max-width: 1200px) {
+  .service-container {
+    grid-template-columns: 1fr; /* Adjust the number of columns for smaller screens */
+    grid-gap: 50px; /* Adjust the grid gap for smaller screens */
+  }
+  .contactme-title {
+    padding-top: 80px;
+  }
+
+  .myservices-title {
+    padding-bottom: 20vh;
+  }
+  /* .contactme-title{
+    top:390vh;
+  } */
+  .service-container{
+    top:380vh;
+  }
+  body {
+    height: auto;
+    width:auto;
+  }
+  #services { height: 200vh; }
+  /* #services { height: 40vh;} */
+  /* .footer{
+    top:420vh;
+  } */
+}
+
