@@ -1,7 +1,6 @@
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400|Poppins:500,400");
 * {
-  /* -webkit-font-smoothing: antialiased; */
   box-sizing: border-box;
 }
 html,
@@ -9,30 +8,16 @@ body {
   margin: 0px;
   height: 100%;
   width: auto;
-  /* height: auto; */
   background-color: rgb(4.48, 17.61, 21.66);
 }
 
-/* button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-} */
+
 
 a {
   text-decoration: none;
 }
 
-/* .desktop {
-  background-color: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgb(9, 1, 24) 0%,
-    rgb(4.48, 17.61, 21.66) 97.76%
-  );
-  overflow-x: hidden;
-  overflow-y: hidden;
-  height: 365vh;
-} */
+
 
 .header {
   position: fixed;
@@ -47,9 +32,7 @@ a {
   background-color: #3e0b589c;
 }
 
-/* .header.sticky {
-  border-bottom: .1rem solid rgba(0, 0, 0, .2);
-} */
+
 .logo {
   text-decoration: none;
   cursor: pointer;
@@ -70,43 +53,6 @@ a {
   float:inline-end;
 
 }
-/* .logo {
-  position: fixed;
-  top: 2vh;
-  left: 3vW;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 30px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.navbar {   
-  position: fixed;
-  display: inline-flex;
-  top: 3.5vh;
-  justify-content: flex-end;
-  align-items: flex-start;
-  
-  flex-shrink: 0;
-  z-index: 3;
-  gap: 29px;
-  right: 10vw;
-}
-
-
-.navbar a {
-  font-family: "Poppins", Helvetica;
-  font-size: 23px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  /* margin-left: 35px; */
-  /* transition: .8s;
-  border: none;
-  
-} */ 
 
 .navbar a:hover {
     color: #0a5286;
@@ -133,24 +79,19 @@ section {
 
 /* ----------------------- home-content ---------------------- */
 
-/* .home-content {
-  display: flex;
-} */
 
 .home-text {
-   margin-left: 10vh;
+   margin-left: 2vw;
    text-align: left;
 }
 
 .home-text h2{
-  /* line-height: 1.5rem; */
   color: #ffffff;
   font-family: "Poppins", Helvetica;
   font-size: 40px;
 }
 
 .home-text h1{
-  /* line-height: 1.5rem; */
   color: #1250b2;
   font-family: "Poppins", Helvetica;
   font-size: 60px;
@@ -163,63 +104,8 @@ section {
 
 }
 
-/* .desktop .hello_there-text {
-  position: relative;
-  top: 20vh;
-  text-align: right;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 60px;
-  letter-spacing: 0;
-  line-height: normal;
-} */
-
-
-/* .induwara_gamage-text {
-  position: relative;
-  top: 22vh;
-  text-align: right;
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: #1250b2;
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-
-
-.desktop .job-field {
-  position: relative;
-  top: 24vh;
-  text-align: right;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 60px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.desktop .inspiring-quote {
-  position: relative;
-  top: 24vh;
-  text-align: right;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: normal;
-} */
-/* 
-.main-image {
-  position: flex;
-  width:70vw;
-  height: 100vh;
-} */
 .profile-picture-blob {
+  margin-right: 2vw;
   position: flex;
   float: right;
   height: auto;
@@ -229,14 +115,9 @@ section {
 
 /*----------- about me --------------- */
 
-/* .profile-picture {
-  position: flex;
-  height: 100vh;
-  width: 70vw;
-} */
 .profile-picture-circle {
-  position: flex;
-  padding-top: 15vh;
+  transform: translate(185%, -15%);
+  padding-top: 1vh;
   width: 20%;
   height: auto;
 
@@ -244,23 +125,26 @@ section {
 
 
 .aboutme {
+  transform: translate(41%, -11%);
   color: #FFF;
   font-family: Poppins;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 10vh;
+  padding-bottom: 11vh;
 }
 
 
 .aboutme-discription {
-  position: flex;
-  width: 40vw;
+  width: auto;
+  margin-left: 15vw;
+  margin-right: 20vw;
   padding-left: 5vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
 }
 
 
@@ -269,18 +153,17 @@ section {
 .myservices-title {
   display: block;
   position: absolute;
-  top: 210vh;
+  top: 215vh;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 45px;
   text-align: center;
   border:#FFF 1px ;
-  /* padding-bottom: 10vh;; */
 }
 
 .service-container{
-  display: flex;
+  padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 70px; 
@@ -371,6 +254,7 @@ section {
   position: absolute;
   top: 325vh;
   left: 16vw;
+  padding-right: 10vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -394,11 +278,11 @@ section {
 #whatsapp-icon:hover,
 .twitter:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 
 #gmail-icon {
-  /* display: block; */
   position: relative;
   width: 50px;
   height: 50px;
@@ -464,14 +348,13 @@ section {
   width: 100%;
   height: 100px;
   background-color: #08323F;
-  /* background-size: 100% 100%; */
 }
 
 .footer-content {
-  position: relative;
+  position: absolute;
   width: 437px;
   height: 24px;
-  top: 1vh;
+  top: 4vh;
   left: 16vw;
 }
 
@@ -487,75 +370,68 @@ section {
   white-space: nowrap;
 }
 
-.copyright-logo {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  
-  top: 25px;
-  left: 0;
-  object-fit: cover;
-}
 
 
 /* ------------  making responsive -------- */
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
 
 
+@media only screen and (max-width: 1300px) {
 
-@media only screen and (min-width: 768px) {
-
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-@media(max-width:1200px){
-  html {
-      font-size: 55%;
-
+  .home-text {
+    margin-left: 10%;
+    margin-right: 10%;
+  
+    text-align: left;
   }
-}
+  
+  .profile-picture-blob {
+    position: absolute;
+    top: 70vh;
+    right: 15vw;
+    width: 30%;
+    padding-bottom: 100px;
+  }
+ 
 
-@media only screen and (max-width: 1200px) {
+
+  .profile-picture-circle {
+    transform: translate(125%, -15%);
+    width: 28%;
+    min-width: 28%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    
+  }
+  
+  
+  .aboutme {
+    
+    padding-top: 20vh;
+    transform: translate(40%, -15%);
+    padding-bottom: 8vh;
+  }
+  
+  
+  .aboutme-discription {
+    width: auto;
+    margin-left: 60px;
+    margin-right: 100px;
+    line-height: 120%;
+    text-align: center;
+   
+  }
+
+
   .service-container {
-    grid-template-columns: 1fr; /* Adjust the number of columns for smaller screens */
-    grid-gap: 50px; /* Adjust the grid gap for smaller screens */
-  }
-  .contactme-title {
-    padding-top: 80px;
+    grid-template-columns: 1fr; 
+    grid-gap: 50px; 
   }
 
   .myservices-title {
     padding-bottom: 20vh;
   }
-  /* .contactme-title{
-    top:390vh;
-  } */
+
   .service-container{
     top:380vh;
   }
@@ -564,9 +440,57 @@ section {
     width:auto;
   }
   #services { height: 200vh; }
-  /* #services { height: 40vh;} */
-  /* .footer{
-    top:420vh;
-  } */
+
+
+
+.contactme-title {
+  position: absolute;
+  top: 390vh;
+  text-align: center;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
+.p {
+  position: absolute;
+  top: 400vh;
+  left: 14vw;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.frame {
+  display: flex;
+  align-items: flex-start;
+  gap: 33px;
+  position: absolute;
+  top: 422vh;
+  left: 14vw;
+}
+
+
+
+.footer-content {
+  display:flex;
+  top: 4vh;
+  
+}
+
+.copyright {
+  
+  left: -6vw;
+
+}
+
+
+}
+ 
