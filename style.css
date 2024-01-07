@@ -7,8 +7,9 @@ html,
 body {
   margin: 0px;
   height: 100%;
-  width: auto;
+  width: 100vw;
   background-color: rgb(4.48, 17.61, 21.66);
+  min-width: 100vw;
 }
 
 
@@ -23,7 +24,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
@@ -114,37 +115,42 @@ section {
 }
 
 /*----------- about me --------------- */
+.aboutcontent{
+  display: flexbox;
+  text-align: center;
+}
+
+.aboutme {
+  /* transform: translate(41%, -11%); */
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 
 .profile-picture-circle {
-  transform: translate(185%, -15%);
-  padding-top: 1vh;
+  /* transform: translate(185%, -15%); */
+  padding-bottom: 50px;
   width: 20%;
   height: auto;
 
 }
 
 
-.aboutme {
-  transform: translate(41%, -11%);
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  padding-bottom: 11vh;
-}
-
-
 .aboutme-discription {
-  width: auto;
+  /* width: auto; */
   margin-left: 15vw;
-  margin-right: 20vw;
-  padding-left: 5vw;
+  margin-right: 15vw;
+  /* padding-left: 5vw; */
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 25px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 
@@ -153,7 +159,7 @@ section {
 .myservices-title {
   display: block;
   position: absolute;
-  top: 215vh;
+  top: 1800px;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -345,22 +351,25 @@ section {
 
 .footer {
   position: absolute;
-  width: 100%;
+  display: flex;
+  width: 100vw;
   height: 100px;
   background-color: #08323F;
+  align-items: center;
 }
 
 .footer-content {
   position: absolute;
-  width: 437px;
-  height: 24px;
+  /* width: 10vw; */
+  /* height: 24px; */
   top: 4vh;
-  left: 16vw;
 }
 
 .copyright {
-  position: absolute;
-  left: 24px;
+  padding-left: 10vw;
+  text-align: center;
+  position: flex;
+  /* left: 24px; */
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -368,6 +377,8 @@ section {
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  /* top: 4vh; */
+  align-items: center;
 }
 
 
@@ -394,35 +405,6 @@ section {
   }
  
 
-
-  .profile-picture-circle {
-    transform: translate(125%, -15%);
-    width: 28%;
-    min-width: 28%;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    
-  }
-  
-  
-  .aboutme {
-    
-    padding-top: 20vh;
-    transform: translate(40%, -15%);
-    padding-bottom: 8vh;
-  }
-  
-  
-  .aboutme-discription {
-    width: auto;
-    margin-left: 60px;
-    margin-right: 100px;
-    line-height: 120%;
-    text-align: center;
-   
-  }
-
-
   .service-container {
     grid-template-columns: 1fr; 
     grid-gap: 50px; 
@@ -435,10 +417,10 @@ section {
   .service-container{
     top:380vh;
   }
-  body {
+  /* body {
     height: auto;
     width:auto;
-  }
+  } */
   #services { height: 200vh; }
 
 
@@ -479,18 +461,27 @@ section {
 
 
 
-.footer-content {
-  display:flex;
-  top: 4vh;
-  
-}
+
 
 .copyright {
-  
-  left: -6vw;
+  position: flex;
+  padding-left: 8vw;
+  /* font-size: 10px; */
 
 }
 
 
 }
  
+
+
+@media only screen and (max-width: 441px) {
+  .copyright {
+    /* left: 24px; */
+    font-size: 12px;
+  
+  }
+  .footer{
+    width: 100%;
+  }
+  }
