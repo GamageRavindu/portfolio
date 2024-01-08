@@ -371,7 +371,7 @@ body {
     padding-top: 60px;
   }
   
-  #home { height: 130vh; } 
+  #home { height: 90vh; } 
   #services { height: 190vh; } 
   #about { height: 140vh; } 
 
@@ -424,10 +424,24 @@ body {
 
 }
 
-@media only screen and (max-width: 741px) {
+@media only screen and (max-width: 741px) and (max-height:1020px ) {
   .navbar {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  #home { height: 100vh; } 
+  #services { height: 180vh; } 
+  #about { height: 150vh; } 
   
+  .profile-picture-blob {
+    margin-top: 40px;
+    width: 60%;
+  }
+
+  .home-text {
+    margin-left: 5vw;
+    text-align: left;
+    line-height: 320%; 
+ }
 }
