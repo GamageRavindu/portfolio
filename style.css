@@ -1,35 +1,27 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400|Poppins:500,400");
 * {
-  box-sizing: border-box;
+  
+  margin: 0px;
 }
 html,
 body {
-  margin: 0px;
   height: 100%;
-  width: 100vw;
   background-color: rgb(4.48, 17.61, 21.66);
-  min-width: 100vw;
+
 }
-
-
-
-a {
-  text-decoration: none;
-}
-
-
 
 .header {
   position: fixed;
+  display: flex;
   top: 0;
+  box-sizing: border-box;
   left: 0;
   width: 100vw;
   padding: 20px 10%;
-  display: flex;
   justify-content: space-between;
   
-  z-index: 100;
+  z-index: 3;
   background-color: #3e0b589c;
 }
 
@@ -41,6 +33,9 @@ a {
   font-weight: 400;
   color: #ffffff;
   font-size: 30px;
+}
+.navbar a {
+  display: flex;
 }
 
 .navbar a {
@@ -64,14 +59,7 @@ a {
 #home { height: 100vh; }
 #about { height: 100vh; }
 #services { height: 100vh; }
-#contact { height: 60vh; }
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+#contact { height: 70vh; }
 
 .button:hover {
   color: #094152;
@@ -80,10 +68,15 @@ section {
 
 /* ----------------------- home-content ---------------------- */
 
-
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .home-text {
-   margin-left: 2vw;
+   margin-left: 5vw;
    text-align: left;
+   line-height: 520%; 
 }
 
 .home-text h2{
@@ -106,147 +99,118 @@ section {
 }
 
 .profile-picture-blob {
-  margin-right: 2vw;
-  position: flex;
+  margin-right: 90px;
   float: right;
+  width: 60%;
   height: auto;
-  max-width: 30%;
-  min-width: 20%;
 }
 
 /*----------- about me --------------- */
-.aboutcontent{
-  display: flexbox;
-  text-align: center;
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .aboutme {
-  /* transform: translate(41%, -11%); */
+  text-align: center;
   color: #FFF;
   font-family: Poppins;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-top: 70px;
 }
 
 .profile-picture-circle {
-  /* transform: translate(185%, -15%); */
-  padding-bottom: 50px;
-  width: 20%;
+  width: 15%;
   height: auto;
+  min-width: 170px;
+  padding-bottom: 30px;
 
 }
 
-
 .aboutme-discription {
-  /* width: auto; */
-  margin-left: 15vw;
-  margin-right: 15vw;
-  /* padding-left: 5vw; */
+  width: 70vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 25px;
   text-align: center;
-  padding-bottom: 50px;
 }
 
 
 /* -----------My services ----------*/
 
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .myservices-title {
-  display: block;
-  position: absolute;
-  top: 1800px;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 45px;
   text-align: center;
-  border:#FFF 1px ;
+  padding-top: 15vh;
 }
 
 .service-container{
-  padding-top: 100px;
+  padding-top: 16vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 70px; 
-  
+  grid-gap: 5vw; 
+  margin: 0 10vw; 
 }
 
 .service-block {
-  position: flex;
-  background-image: url(./img/rectangle-9.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #094152;
   background-size: 100% 100%;
-  width: 361px;
-  height: 361px;
-  scale: 110%;
+  width: 25vw;
+  height: 23vw;
+  border-radius: 2vw;
 }
 
 .img {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  top: 67px;
-  left: 119px;
-  object-fit: cover;
+
+  width: 8vw;
+  height: auto;
 }
 
 .web-dev-img {
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  top: 67px;
-  left: 119px;
-  object-fit: cover;
+  width: 8vw;
+  height: auto;
 }
 
-.web-text {
-  position: absolute;
-  top: 240px;
-  left: 46px;
+.services-text {
+  text-align: center;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 2vw;
   letter-spacing: 0;
   line-height: normal;
   z-index: 1;
-}
-
-.animation-text {
-  position: absolute;
-  top: 240px;
-  left: 25px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-
-
-.graphic-text {
-  position: absolute;
-  top: 240px;
-  left: 57px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
+  padding-top: 3.5vw;
 }
 
 /* ----------- contact me -------------- */
 
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .contactme-title {
-  position: absolute;
-  top: 310vh;
   text-align: center;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
@@ -257,10 +221,8 @@ section {
 }
 
 .p {
-  position: absolute;
-  top: 325vh;
-  left: 16vw;
-  padding-right: 10vw;
+  padding-top: 100px;
+  padding-left: 10vw;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -274,9 +236,8 @@ section {
   display: flex;
   align-items: flex-start;
   gap: 33px;
-  position: absolute;
-  top: 347.5vh;
-  left: 16vw;
+  padding-left: 10vw;
+  padding-top: 50px;
 }
 
 #gmail-icon:hover,
@@ -350,7 +311,6 @@ section {
 /* ------------ footer -------------------- */
 
 .footer {
-  position: absolute;
   display: flex;
   width: 100vw;
   height: 100px;
@@ -359,26 +319,18 @@ section {
 }
 
 .footer-content {
-  position: absolute;
-  /* width: 10vw; */
-  /* height: 24px; */
-  top: 4vh;
+  padding-top: 40px;
 }
 
 .copyright {
   padding-left: 10vw;
   text-align: center;
-  position: flex;
-  /* left: 24px; */
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
-  white-space: nowrap;
-  /* top: 4vh; */
-  align-items: center;
 }
 
 
@@ -386,102 +338,96 @@ section {
 /* ------------  making responsive -------- */
 
 
-
 @media only screen and (max-width: 1300px) {
-
-  .home-text {
-    margin-left: 10%;
-    margin-right: 10%;
-  
-    text-align: left;
-  }
-  
-  .profile-picture-blob {
-    position: absolute;
-    top: 70vh;
-    right: 15vw;
-    width: 30%;
-    padding-bottom: 100px;
-  }
- 
-
   .service-container {
     grid-template-columns: 1fr; 
-    grid-gap: 50px; 
+    grid-gap: 3vh; 
+    padding-top: 8vh;
+    flex-shrink: 0;
   }
 
   .myservices-title {
-    padding-bottom: 20vh;
+    padding-top: 120px;
+  }
+  .service-block {
+    width: 320px;
+    height: 310px;
+    border-radius: 20px;
   }
 
-  .service-container{
-    top:380vh;
-  }
-  /* body {
+  .img {
+
+    width: 90px;
     height: auto;
-    width:auto;
-  } */
-  #services { height: 200vh; }
-
-
-
-.contactme-title {
-  position: absolute;
-  top: 390vh;
-  text-align: center;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 45px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.p {
-  position: absolute;
-  top: 400vh;
-  left: 14vw;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-
-.frame {
-  display: flex;
-  align-items: flex-start;
-  gap: 33px;
-  position: absolute;
-  top: 422vh;
-  left: 14vw;
-}
-
-
-
-
-
-.copyright {
-  position: flex;
-  padding-left: 8vw;
-  /* font-size: 10px; */
-
-}
-
-
-}
- 
-
-
-@media only screen and (max-width: 441px) {
-  .copyright {
-    /* left: 24px; */
-    font-size: 12px;
+  }
   
+  .web-dev-img {
+    width: 90px;
+    height: auto;
   }
-  .footer{
-    width: 100%;
+  
+  .services-text {
+    font-size: 29px;
+    padding-top: 60px;
   }
+  
+  #home { height: 130vh; } 
+  #services { height: 190vh; } 
+  #about { height: 140vh; } 
+
+  .profile-picture-blob {
+    margin-right: 0;
+    float: right;
+    width: 35%;
+    height: auto;
   }
+   .pp {
+    width: 80vw;
+  }
+  .home{
+    justify-content: left;
+    flex-direction: column;
+  }
+  .home-text {
+    width: 80vw;
+     margin: 20vh 10vw  0 10vw;
+
+  }
+  
+  
+}  
+
+@media only screen and (max-width: 741px)and (min-height:1020px ) {
+  #home { height: 90vh; } 
+  #services { height: 150vh; } 
+  #about { height: 85vh; } 
+ 
+  .profile-picture-blob {
+    margin-right: 0;
+    margin-top: 70px;
+    float: right;
+    width: 60%;
+    height: auto;
+  }
+
+
+    .aboutme {
+    text-align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 741px) {
+  .navbar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+}
