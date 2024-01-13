@@ -240,16 +240,17 @@ body {
   padding-top: 50px;
 }
 
-#gmail-icon:hover,
+.gmail-icon:hover,
 .facebook:hover,
-#whatsapp-icon:hover,
+.linkedin:hover,
 .twitter:hover {
-  transform: scale(1.05);
+  transform: scale(1.09);
+  transition: transform 0.15s ease-in;
   cursor: pointer;
 }
 
 
-#gmail-icon {
+.gmail-icon {
   position: relative;
   width: 50px;
   height: 50px;
@@ -260,7 +261,7 @@ body {
 }
 
 
-#gmail-text {
+/* #gmail-text {
   display: none;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
@@ -268,7 +269,7 @@ body {
   font-size: 32px;
   letter-spacing: 0;
   line-height: normal;
-}
+} */
 
 
 .facebook {
@@ -280,16 +281,16 @@ body {
   background-position: 50% 50%;
 }
 
-#whatsapp-icon {
+.linkedin {
   position: relative;
   width: 50px;
   height: 50px;
-  background-image: url(./img/whatsapp-1.png);
+  background-image: url(./img/linkedin.png);
   background-size: cover;
   background-position: 50% 50%;
 }
 
-#whatsapp-number {
+/* #whatsapp-number {
   display: none;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
@@ -297,7 +298,7 @@ body {
   font-size: 32px;
   letter-spacing: 0;
   line-height: normal;
-}
+} */
 
 .twitter {
   position: relative;
@@ -401,6 +402,11 @@ body {
   #home { height: 90vh; } 
   #services { height: 150vh; } 
   #about { height: 85vh; } 
+
+  .navbar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
  
   .profile-picture-blob {
     margin-right: 0;
