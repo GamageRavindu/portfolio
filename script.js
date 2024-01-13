@@ -1,3 +1,4 @@
+/*
 function gmail_button() {
     var gmail_text = document.getElementById("gmail-text");
     var gmail_icon = document.getElementById("gmail-icon");
@@ -30,3 +31,4 @@ function gmail_button() {
     });
   }
 
+*/
